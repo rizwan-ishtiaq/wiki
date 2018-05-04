@@ -30,7 +30,7 @@ Annotation | Description
 @CsvFileSource | takes one or more csv file from class path. each line of file result as one invocation of test uses double quote as quote character. Use / to get file from  root of class path
 @ArgumentsSource | custom sources by providing a class which implement ArgumentsProvider
 @ConvertWith | applied on parameters which you want to convert, passing a class as parameter which extends SimpleArgumentConverter or implement ArgumentConverter
-@ExtendWith | 
+@ExtendWith | can be placed on class or method and passing a class with is implementing the extension points interfaces
 @TestTemplate | 
 @Tag | 
 
