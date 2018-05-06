@@ -31,8 +31,8 @@ Annotation | Description
 @ArgumentsSource | custom sources by providing a class which implement ArgumentsProvider
 @ConvertWith | applied on parameters which you want to convert, passing a class as parameter which extends SimpleArgumentConverter or implement ArgumentConverter
 @ExtendWith | can be placed on class or method and passing a class with is implementing the extension points interfaces
+@Tag | use to tag method or class to be inculde/exclude while running test. Value can't be null/empty
 @TestTemplate | 
-@Tag | 
 
 * with per_method @Before/After(All) methods need to be static
 * with per_class @Before/After(All) can be non-static methods
@@ -74,7 +74,32 @@ assertTimeoutPreemptively | timeDuration, lambda | terminate execution of method
 * Arguments.of() can be use to create an instance of Arguments
 * strings params can be convert implicitly to primitive types, enum or java.time, see documentation
 
+### Extenion Points
+* We can also execute extension globally if these are present in class path by jvm flag, in this case no need to put annotation on it
+* Creating your own annotation using other junit annotations is call meta-annotation
+* Extension must be written as stateless, it up to engine when it want to instantiate the class and how long it want to keep it
+* To store state in extension, use store(extension context) by namespace (globe/custom). While getting key/value from context, engine will 1st look into method level then class level finally in engine level.
+1. General purpose
+   1. TestInstancePostProcessor
+   1. ParameterResolver
+   1. TestExecutionPostHandler
+1. Conditional
+   1. ExecutionCondition
+
+1. Life Cycle call back
+   1. Before/After AllCallBack
+   1. Before/After EachCallBack
+   1. Before/After TestExecutionCallBack
+
 ### Remember
 1. We can use test interfaces with default/static methods in junit5 due to java 8
 1. Annotation on interface will change the behaviour of implementation class as well
 1. TestInfo and TestReporter can be injected into life-cycle and test methods and after parameters in @ParameterizedTest
+1. BY default console/maven/gradle look for certain patterns in class name to scan and run test e-g starting and ending with Test. Note we can override this behaivor.
+1. class and method can be on package visibility (public) is not required
+1. junit4 @Ignore changed with @Disable
+1. junit4 @Catagory changed with @Tag
+1. Parameter location is changed now. message is the last parameter of assertion methods
+1. @Rule @ClassRule and ErrorCollector gone, now this can achive with assertAll and lambda combination
+Timeout/Rule gone, will replace by methods
+1. Backward compatibility can achieve using vintage dependency and junit4 rules also supported with extra dependency.
