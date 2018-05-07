@@ -1,0 +1,36 @@
+docker
+  version
+  info
+  run #run new container
+    -d #run in backgroud/detached mood
+    --name #name of new container
+      <unique name> #show when you ps
+    -p #map port
+      <host post>:<inside docker port>
+    -it #open intractive mood
+    <image name> #check in local repo with tag lastest, else download
+    <shell name> type of shell you want to intract like bash or cmd
+  ps #running containers
+    -a #all
+    -aq #quite and return all container id
+  images #info about images
+  pull #download image to local
+    <image name> #default get lastest
+    <image name>:<tag> #the version of image you want to get
+  rmi #remove image from local repo
+    <image name>:<tag> or <id>
+    $(docker images -q) #remove all images
+  start
+    <container name> or <container id>
+  stop
+    <container name> or <container id>
+    $(docker ps -aq) #stop all containers
+  rm #remove container
+    -f #force removal, will remove running containers
+     <container name> or <container id>
+     $(docker ps -aq) #remove all containers
+  
+Inside container sheel
+  exit #exit shell and container will stop, because shell was only process running (if you canme into shell with run command)
+  ctl+p+q #exit intractive mood and don't stop shell
+  
