@@ -50,6 +50,29 @@ docker node
   ls #only runs on manager and show all nodes
   promote #promote worker node into manager
     <host name> or <id>
+  ps #show the running tasks on mentioned node
+    <host name> or <id>
+    
+docker service
+  create
+    --name <any name>
+    -p <swarm port>:<container port> #map port accross the entire swarm
+    --replicas <number> #create <number> tasks and remains active at any time
+    <image name>
+  ls #list all the services
+  ps #running tasks of service
+    <service name> or <id>
+    self #All the tasks running
+  inspect #detail config of service
+    <service name> or <id>
+  update
+    --replicas  #increase of decrease the number of task
+      <number>
+      <service name> or <id>
+  scale #same like update --replicas
+    <service name> or <id>=<number> #increase of decrease the number of task
+  rm #remove the complete service
+    <service name> or <id>
   
 Native docker engine port: 2375
 Secure docker engine port: 2376
