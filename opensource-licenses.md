@@ -1,4 +1,10 @@
-For detail see https://opensource.org/licenses
+1. GNU General Public License v3.0
+1. GNU Affero General Public License v3.0
+1. GNU Lesser General Public License v3.0
+1. Apache License 2.0
+1. MIT
+1. Mozilla Public License 2.0
+1. The Unlicense
 
 Permissions | GNU GPLv3 | GNU AGPLv3 | GNU LGPLv3 | Apache License 2.0 | MIT | Mozilla Public License 2.0 | The Unlicense
 ----------- | --------- | ---------- | ---------- | ------------------ | --- | -------------------------- | -------------
@@ -22,5 +28,5 @@ Limitations | GNU GPLv3 | GNU AGPLv3 | GNU LGPLv3 | Apache License 2.0 | MIT | M
  Warranty | :x: | :x: | :x: | :x: | :x: | :x: | :x:
  Trademark use | | | | :x: | | :x: |
  
- ALL details
- https://choosealicense.com/licenses/
+* Quick look https://choosealicense.com/licenses/
+* For detail see https://opensource.org/licenses
