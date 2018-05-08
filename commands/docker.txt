@@ -34,3 +34,23 @@ Inside container sheel
   exit #exit shell and container will stop, because shell was only process running (if you canme into shell with run command)
   ctl+p+q #exit intractive mood and don't stop shell
   
+docker swarm
+  init #create new cluster
+    --advertise-addr <ip address>:<any port> #prod have more than 1 ip, default ip for swarm staff:2377 (best to use)
+    --listen-addr <ip address>:<any port> #listen swarm manager traffic:2377
+  join-token
+    manager #Return command to execute to machine to add in swarm as manager
+    worker #Return command to execute to machine to add in swarm as worker
+  join #add new node into swarm
+    --token <long token>
+    --advertise-addr <ip address>:<any port> #of current machine/node
+    --listen-addr <ip address>:<any port> #of current machine/node
+   
+docker node
+  ls #only runs on manager and show all nodes
+  promote #promote worker node into manager
+    <host name> or <id>
+  
+Native docker engine port: 2375
+Secure docker engine port: 2376
+  
