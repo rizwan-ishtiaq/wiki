@@ -56,6 +56,7 @@ docker node
 docker service
   create
     --name <any name>
+    --network <name> #particular network where you want to deploy service
     -p <swarm port>:<container port> #map port accross the entire swarm
     --replicas <number> #create <number> tasks and remains active at any time
     <image name>
@@ -64,15 +65,27 @@ docker service
     <service name> or <id>
     self #All the tasks running
   inspect #detail config of service
+    --pretty #make it readable
     <service name> or <id>
   update
     --replicas  #increase of decrease the number of task
       <number>
-      <service name> or <id>
+    --image <name> #if you want to update image
+    -- update-parallelism #become default or change default
+      <number> #<number> task at a time
+    --update-delay #become default or change default
+      10s #10 sec or use m for mintues, wait for this param
+    <service name> or <id>
   scale #same like update --replicas
     <service name> or <id>=<number> #increase of decrease the number of task
   rm #remove the complete service
     <service name> or <id>
+    
+docker network
+  create
+    -d
+    overlay <any name> #create a network with type overlay
+  ls #print all networks
   
 Native docker engine port: 2375
 Secure docker engine port: 2376
