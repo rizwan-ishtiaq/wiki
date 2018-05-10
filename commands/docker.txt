@@ -35,6 +35,9 @@ docker
     <image name or id> #show commands history while building image
   inspect
     <image name or id> #return config and layers of image
+  build #build image from Dockerfile
+    -t <any name> #create tag on image
+    <dir path> #build context path, location of source code, can be git repo
     
 Inside container sheel
   exit #exit shell and container will stop, because shell was only process running (if you canme into shell with run command)
@@ -96,3 +99,11 @@ docker network
 Native docker engine port: 2375
 Secure docker engine port: 2376
   
+Dockerfile
+FROM #layer, always 1st line, underlyine OS
+LABEL #matadata, anything as label e-g maintainer
+RUN #layer, execute command e-g linux command
+COPY #layer, copy from local file system to image
+WORKDIR #matadata, set working dir inside image
+EXPOSE #matadata, expose port from image
+ENTRYPOINT[] #matadata, execute application
