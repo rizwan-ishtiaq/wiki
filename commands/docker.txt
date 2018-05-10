@@ -14,8 +14,10 @@ docker
     -a #all
     -aq #quite and return all container id
   images #info about images
+    --digests #out contains the hash id of image
   pull #download image to local
-    <image name> #default get lastest
+    <image name> #default get with tag latest
+      -a #pull all images in repo that match my plateform and architucture
     <image name>:<tag> #the version of image you want to get
   rmi #remove image from local repo
     <image name>:<tag> or <id>
@@ -29,7 +31,11 @@ docker
     -f #force removal, will remove running containers
      <container name> or <container id>
      $(docker ps -aq) #remove all containers
-  
+  history
+    <image name or id> #show commands history while building image
+  inspect
+    <image name or id> #return config and layers of image
+    
 Inside container sheel
   exit #exit shell and container will stop, because shell was only process running (if you canme into shell with run command)
   ctl+p+q #exit intractive mood and don't stop shell
