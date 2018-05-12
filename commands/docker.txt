@@ -31,10 +31,15 @@ docker
     -f #force removal, will remove running containers
      <container name> or <container id>
      $(docker ps -aq) #remove all containers
+  port #return the list of ports map
+    <container name or id>
+  logs
+    <container name or id>
+      -f #follow logs
   history
     <image name or id> #show commands history while building image
   inspect
-    <image name or id> #return config and layers of image
+    <image name or id> or <container name or id> #return config and layers of image
   build #build image from Dockerfile
     -t <any name> #create tag on image
     <dir path> #build context path, location of source code, can be git repo
