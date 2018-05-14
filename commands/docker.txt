@@ -44,6 +44,8 @@ docker
     -t <repository name>:<tag> #create tag on image
     -f <path/Dockfile> #docker file path, if it is not on context root
     <dir path> or <url> #build context path, location of source code, can be git repo
+  login
+  logout
     
 Inside container sheel
   exit #exit shell and container will stop, because shell was only process running (if you canme into shell with run command)
