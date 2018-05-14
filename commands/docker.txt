@@ -41,7 +41,7 @@ docker
   inspect
     <image name or id> or <container name or id> #return config and layers of image
   build #build image from Dockerfile
-    -t <image name>:<tag> #create tag on image
+    -t <repository name>:<tag> #create tag on image
     -f <path/Dockfile> #docker file path, if it is not on context root
     <dir path> or <url> #build context path, location of source code, can be git repo
     
