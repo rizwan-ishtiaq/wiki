@@ -3,8 +3,11 @@ docker
   info
   run #run new container
     -d #run in backgroud/detached mood
+    --network <name>#on specific network you want to run
     --name #name of new container
-      <unique name> #show when you ps
+      <unique name> #will show when you run ps
+    --mount #attach volume to container
+      source=<name (in host)>,target=<path on container file system>
     -p #map port
       <host post>:<inside docker port>
     -it #open intractive mood
@@ -46,6 +49,12 @@ docker
     <dir path> or <url> #build context path, location of source code, can be git repo
   login
   logout
+
+docker volume #independent from containers
+  ls #show existing volumes
+  create <name> #new 
+  inspect <name>
+  rm <name>
     
 Inside container sheel
   exit #exit shell and container will stop, because shell was only process running (if you canme into shell with run command)
@@ -58,10 +67,16 @@ docker swarm
   join-token
     manager #Return command to execute to machine to add in swarm as manager
     worker #Return command to execute to machine to add in swarm as worker
+      --rotate #create new token in case your token compromized
+        worker
+        manager
   join #add new node into swarm
     --token <long token>
     --advertise-addr <ip address>:<any port> #of current machine/node
     --listen-addr <ip address>:<any port> #of current machine/node
+  update
+    --autolock=true #upon restart manager will not join swarm unless key enter
+  unlock #to join, give key
    
 docker node
   ls #only runs on manager and show all nodes
@@ -100,9 +115,12 @@ docker service
     
 docker network
   create
-    -d
-    overlay <any name> #create a network with type overlay
+    -d #driver
+      overlay <any name>#create a network with type overlay, works only with swarm mode
+      bridge <any name>#default
   ls #print all networks
+  inspect #details about network
+    <network name>
   
 Native docker engine port: 2375
 Secure docker engine port: 2376
