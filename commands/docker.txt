@@ -113,6 +113,15 @@ docker service
   rm #remove the complete service
     <service name> or <id>
     
+docker stack #only for swarm mode
+  ls
+  ps <name of stack>
+  services <name of stack>
+  deploy #deploy new stack of update existing runing one
+    -c 
+      <file name> #compose file with path
+      <name of stack> 
+    
 docker network
   create
     -d #driver
