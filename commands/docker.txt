@@ -127,6 +127,8 @@ docker network
     -d #driver
       overlay <any name>#create a network with type overlay, works only with swarm mode
       bridge <any name>#default
+    --subnet <network/subnet>
+    <name>
   ls #print all networks
   inspect #details about network
     <network name>
