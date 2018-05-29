@@ -9,3 +9,5 @@ If you want to contribute (add/update) on any subject. You are very wellcome.
 1. Comparison between different opensource licenses see file *[opensource-licenses](opensource-licenses.md)*
 1. [Commands](commands) directory contains multiple file for command line tools
    1. [Docker](commands/docker.txt)
+1. [Opinions](opinions) directory contains some of my personal opionions on particular time and needs
+   1. [JHipster](opinions/JHipster.md)
