@@ -48,6 +48,10 @@ docker
     -f <path/Dockfile> #docker file path, if it is not on context root
     <dir path> or <url> #build context path, location of source code, can be git repo
   login
+  tag
+    <image id> <new tag e-g dockerHubUser/imageRepo:tag>
+  push
+    <image tag> #dockerHubUser/imageRepo:tag will push single image
   logout
 
 docker volume #independent from containers
