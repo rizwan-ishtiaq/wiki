@@ -23,6 +23,7 @@ docker
       -a #pull all images in repo that match my plateform and architucture
     <image name>:<tag> #the version of image you want to get
   rmi #remove image from local repo
+    -f #force image to remove it
     <image name>:<tag> or <id>
     $(docker images -q) #remove all images
   start
