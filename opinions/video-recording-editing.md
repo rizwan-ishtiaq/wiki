@@ -5,3 +5,5 @@ Most of these will allow you to record your screen and voice simultaneously. For
 This may be sufficient for you. However, if you wanted to have more control once you’ve recorded the video you could then bring that exported .mp4 file into a video editor. https://itsfoss.com/best-video-editing-software-linux/#kdenlive 
 
 Here you could do some additional work such as delete dead spaces, speed up certain steps or processes, add text overlays etc. You could even add a new voice-over separately. I think your best course of action would be to download a couple of the free tools available and play around with them to see if they will suit your needs.
+
+I’m a big fan of Sennheiser. This one, the Sennheiser PC 8, is really good and not too expensive. https://www.amazon.co.uk/Sennheiser-PC-USB-Internet-Telephony/dp/B005HWEZGG?tag=greshomal-21 If you are looking for something cheaper, then an older version of this one would might do, the PC 6 or PC 7 etc. There’s lots of other options out there too but generally you can’t go wrong with Sennheiser. 
