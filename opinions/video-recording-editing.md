@@ -1,4 +1,4 @@
-#Linux
+# Linux
 Initially, you will need a screen recording app. https://itsfoss.com/best-linux-screen-recorders/ 
 
 Most of these will allow you to record your screen and voice simultaneously. For your voice, I would use a headset microphone as it will be of higher quality than the one built into your laptop. I would prepare a script of what you’d like to say and then run through the process while speaking a couple of times to make sure it’s making sense visually before recording. A well-rehearsed presentation will both appear more professional and help reduce the amount of edit work you will need to do. Once you’ve recorded your video most screen recorders will let you perform a simple top and tail edit to tidy up the file. Export the file in your preferred codec, YouTube accepts many but a .mp4 is the most popular. 
@@ -9,7 +9,7 @@ Here you could do some additional work such as delete dead spaces, speed up cert
 
 I’m a big fan of Sennheiser. This one, the Sennheiser PC 8, is really good and not too expensive. https://www.amazon.co.uk/Sennheiser-PC-USB-Internet-Telephony/dp/B005HWEZGG?tag=greshomal-21 If you are looking for something cheaper, then an older version of this one would might do, the PC 6 or PC 7 etc. There’s lots of other options out there too but generally you can’t go wrong with Sennheiser. 
 
-#Mac
+# Mac
 Most Macs will have iMovie preinstalled on them, if not it’s a free download from the Apple App Store: https://itunes.apple.com/gb/app/imovie/id377298193?mt=8&v0=www-us-ios-imovie-app-imovie 
 This is a very user friendly basic video editing platform. 
 
