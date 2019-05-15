@@ -17,3 +17,6 @@ If you are hoping to record your screen, Quicktime on Mac has this feature alrea
 
 If you’re looking for a more advanced video editing software package, Avid Media Composer offers a completely free version of their editing software. It will have a steeper learning curve than something like iMovie but is available on both Mac and PC. 
 https://www.avid.com/media-composer-first 
+
+# Voice
+Sounds like electrical hum, can sometimes be an issue. Try the headphones on any other machines first? Some people recommend disabling the headphone and microphone jacks while using a USB mic as this might get rid of it.
