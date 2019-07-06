@@ -1,0 +1,11 @@
+Download / save from url
+curl -O -L url
+
+CORS
+curl -i -X OPTIONS -H "Origin: http://127.0.0.1:3000" \
+    -H 'Access-Control-Request-Method: POST' \
+    -H 'Access-Control-Request-Headers: Content-Type, Authorization' \
+    "https://the.sign_in.url"
+
+request with json body
+curl -X POST -H "Content-Type: application/json" -d '{"":""}' "http://localhost:8080    
