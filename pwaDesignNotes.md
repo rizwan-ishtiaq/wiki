@@ -96,3 +96,11 @@ ios/ipados will only load mainfest file upon install not on brower open - if use
 * @media (-ms-high-contrast: active)
 * dark mode support windows, apple and android 10+
 * @media (prefers-color-scheme: dark)
+
+# Install or Add to home screen
+* all browser provide some support to install it
+* chroniumn based browser provide to customized install (not apple)
+* PWABuilder's <pwa-install> Web Component
+* some stores support PWA launcher (google play store, microsoft store, kiastore, jio store, samsung galaxy apps)
+* every store have its own requirement to create lanunher
+* manifest's description, categories and screenshots can be used by some stores
