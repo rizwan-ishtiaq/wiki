@@ -73,3 +73,26 @@ ios/ipados will only load mainfest file upon install not on brower open - if use
 ## desktop friendly
 * provide keyborad support where user expecting
 * Support Mini-Window (when user decrease size)
+
+# Improvments for mobile
+## Improve User Experience
+* Content Selection (with tap press) can be disable with "user-select" and "-webkit-user-select" css to none
+* Tap Effects
+  * Highlight Color to be used as an over box when user touches a clickable area - always use RGBA colors with transparency
+  * Touch Callout hold tap on link and menu will be open to open link in other tab etc
+* Safe areas to defend against notch/foldable devices
+## Media Queries for PWAs
+* use to check if PWA is installed or not e-g display-mode: standalone
+* can use with @supports combination of @media (specific OS)
+## Notch-based and Foldable Devices
+* you might want to display your background color/image to notch areas
+* use viewport-fit=cover in meta viewport tag to get 100% area in notch based areas
+* use above safe area env variables from browser with it
+
+## Add Accessibility and Dark ModeSupport
+### Reduced Motion
+* @media (prefers-reduced-motion: reduce)
+### High Contrast Mode
+* @media (-ms-high-contrast: active)
+* dark mode support windows, apple and android 10+
+* @media (prefers-color-scheme: dark)
